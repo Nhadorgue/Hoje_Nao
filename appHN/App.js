@@ -33,7 +33,7 @@ export default function App() {
         onChangeText={value => setSenha(value)}
       />
 
-      <Button title="logar"
+      <Button title="ENTRAR"
         buttonStyle={styles.botaoPadrao}
         titleStyle={styles.textoBotoes}
         containerStyle={styles.containerBotoes}
