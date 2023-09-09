@@ -6,8 +6,6 @@ export const styles = StyleSheet.create({
         backgroundColor: '#000',
         alignItems: 'center',
         justifyContent: 'center',
-        
-
     },
 
     h: {
@@ -16,7 +14,7 @@ export const styles = StyleSheet.create({
     },
 
     containerBotoes:{
-        borderRadius: 12,
+        borderRadius: 50,
         marginHorizontal: 50,
         height: 50,
         width: 200,
@@ -26,7 +24,7 @@ export const styles = StyleSheet.create({
 
     botaoPadrao: {
         backgroundColor: '#EC86D0',
-        borderRadius: 12,
+        borderRadius: 50,
 
     },
 
@@ -50,4 +48,11 @@ export const styles = StyleSheet.create({
         bottom:36
     },
 
+    textoCadastro:
+    {
+        textAlign: "center",
+        color:'white',
+    },
+
+    
 });

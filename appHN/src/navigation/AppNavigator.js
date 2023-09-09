@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import AuthNavigator from './AuthNavigator';
 import TabNavigator from './TabNavigator';
-import Cadastrar from './CadastrarScreen';
+import Cadastrar from '../screens/Auth/CadastrarScreen';
 
 const Stack = createStackNavigator();
 

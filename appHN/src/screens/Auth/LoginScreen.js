@@ -9,8 +9,6 @@ export default function LoginScreen({ navigation }) {
   const [senha, setSenha] = useState(null)
 
   const login = () => {
-
-    // console.log("entrou")
     console.log(email)
     console.log(senha)
     
