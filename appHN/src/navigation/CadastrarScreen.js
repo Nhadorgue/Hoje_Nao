@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { View, Text } from 'react-native';
+import { styles } from '../../src/styles';
 
 export default function Cadastrar() {
     return (
-        <View>
-            <Text>Essa é a tela de Cadastro</Text>
+        <View style={styles.container}>
+            <Text h1 style={styles.h}>Hoje Não!</Text>
+            
+
         </View>
     );
 

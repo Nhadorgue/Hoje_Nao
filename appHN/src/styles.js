@@ -10,7 +10,8 @@ export const styles = StyleSheet.create({
 
     },
 
-    h1: {
+    h: {
+        bottom: 30,
         color: '#EC86D0',
     },
 
@@ -33,6 +34,20 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold', 
         fontSize: 23 
 
+    },
+
+    iconePadrao:
+    {
+        width:100,
+        height:100,
+        
+    },
+
+    iconeAuth:
+    {
+        width:100,
+        height:100,
+        bottom:36
     },
 
 });

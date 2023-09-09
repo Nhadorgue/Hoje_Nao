@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 const Tab2Screen = () => {
   return (
     <View>
-      <Text>Tab 2 Content</Text>
+      <Text>Tab 2 kkkkkkkkkkkkkkkkkk</Text>
     </View>
   );
 };

@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
 import { Button, Input, Text } from 'react-native-elements';
 import { useState } from 'react';
 import { styles } from '../../styles';
@@ -10,36 +10,45 @@ export default function LoginScreen({ navigation }) {
 
   const login = () => {
 
-    // Autenticação e redirecionamento
-    navigation.navigate('App');
-
     // console.log("entrou")
-    // console.log(email)
-    // console.log(senha)
+    console.log(email)
+    console.log(senha)
     
-    // if (username == "test" && password == "test")
-    //   navigation.navigate('Home');
-    // else
-    //   alert("Email ou senha inválidos!")
+    if (email == "test" && senha == "test"){
+      // Autenticação e redirecionamento
+      navigation.navigate('App');
+      //navigation.navigate('Home');
+    }
+    else{
+      alert("Email e/ou senha inválidos!")
+      return;
+    }
   }
 
   const cadastrar = () => {
-    navigation.reset({
-      index: 0,
-      routes: [{ name: "Cadastrar" }]
-    })
+    // navigation.reset({
+    //  index: 0,
+    //  routes: [{ name: "Cadastrar" }]
+    //})
+    navigation.navigate('Cadastrar');
+    
   }
 
   return (
     <View style={styles.container}>
+      <Image 
+        source={ require('../../../assets/Logo_HN.png')}
+        style={styles.iconeAuth}
+        
+      />
 
-      <Text h1 style={styles.h1}>Hoje Não!</Text>
+      <Text h1 style={styles.h}>Hoje Não!</Text>
 
       <Input placeholder='Digite seu usuário'
         color='white'
         leftIcon={{ type: 'font-awesome', name: 'user', color: '#EC86D0' }}
-        onChangeText={value => setEmail(value)}
         keyboardType='email-address'
+        onChangeText={value => setEmail(value)}
       />
 
       <Input placeholder="Digite sua senha"
@@ -59,7 +68,7 @@ export default function LoginScreen({ navigation }) {
       <Button title="Cadastre-se"
         containerStyle={{
           position: 'absolute',
-          bottom: 20,
+          bottom: 10,
           width: 200,
           marginHorizontal: 50,
           marginVertical: 10,
